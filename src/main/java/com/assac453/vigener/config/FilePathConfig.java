@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class FilePathConfig1 {
+public class FilePathConfig {
 
     @Value("${file.input.path}")
     private String inputFilePath;
@@ -18,7 +18,7 @@ public class FilePathConfig1 {
     private String decryptedFilePath;
 
     @Bean
-    public FilePath filePathConfig() {
+    public FilePath filePath() {
         return new FilePath(inputFilePath, encryptedFilePath, decryptedFilePath);
     }
 }
