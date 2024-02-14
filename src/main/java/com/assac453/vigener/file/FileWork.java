@@ -3,7 +3,6 @@ package com.assac453.vigener.file;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
-import java.util.Scanner;
 
 @Component
 public class FileWork {

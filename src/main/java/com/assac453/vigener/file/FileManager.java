@@ -2,7 +2,6 @@ package com.assac453.vigener.file;
 
 import com.assac453.vigener.algorithm.VigenerAlgorithm;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
