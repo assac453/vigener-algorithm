@@ -20,5 +20,6 @@ public class VigenerApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		fileManager.encrypt();
 		fileManager.decrypt();
+		fileManager.analyze();
 	}
 }
