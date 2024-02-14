@@ -26,15 +26,11 @@ public class FrequencyAnalysis {
 
     private static Map<Character, Integer> analyzeFrequency(String input) {
         Map<Character, Integer> frequencyMap = new HashMap<>();
-        // Проход по каждому символу в строке
         for (char symbol : input.toCharArray()) {
-            // Пропускаем пробелы и знаки пунктуации
             if (!Character.isLetter(symbol)) {
                 continue;
             }
-            // Приводим к нижнему регистру
             symbol = Character.toLowerCase(symbol);
-            // Обновляем частоту символа
             frequencyMap.put(symbol, frequencyMap.getOrDefault(symbol, 0) + 1);
         }
         return frequencyMap;
